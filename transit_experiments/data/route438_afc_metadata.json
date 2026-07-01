@@ -1,0 +1,40 @@
+{
+  "line": "438",
+  "studied_direction": "downbound/toward Yongfeng Bus Station",
+  "records_line_438": 25297,
+  "paired_trips_all_directions": 10337,
+  "paired_trips_studied_direction": 5544,
+  "n_origins": 26,
+  "n_dests": 24,
+  "potential_od_pairs": 624,
+  "period_labels": [
+    "06:00-07:00",
+    "07:00-08:00",
+    "08:00-09:00",
+    "09:00-10:00",
+    "10:00-12:00",
+    "12:00-14:00",
+    "14:00-16:00",
+    "16:00-17:00",
+    "17:00-18:30",
+    "18:30-22:30"
+  ],
+  "baseline_frequency_vph": [
+    3.0,
+    5.0,
+    5.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    4.0,
+    5.0,
+    3.0
+  ],
+  "transit_share_assumption": 0.28,
+  "positive_observed_od_period_cells": 1331,
+  "unique_observed_stop_od_pairs": 422,
+  "source_note": "Beijing bus AFC card/QR records for 2021-12-17 and 2021-12-18; Route 438 records filtered and paired by card, vehicle, direction, and transaction time.",
+  "raw_data": "not distributed; public release includes aggregate OD-period demand only",
+  "public_release_note": "Individual paired AFC trip records and raw AFC files are excluded."
+}

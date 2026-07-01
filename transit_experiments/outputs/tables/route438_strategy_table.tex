@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Strategy comparison for the Beijing Route 438 case.}
+\label{tab:route438_strategy}
+\begin{threeparttable}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Scenario & Strategy & Obj. & Eff. & Eq. & Share (\%) & Added walk & Stops & Freq. & Time (s) \\
+\midrule
+\multirow{4}{*}{Weekday} & C & 11.43 & 11.43 & 0.00 & 27.8 & 0.00 & 30 & 3.70 & 0.01 \\
+ & S & 10.60 & 10.50 & 0.50 & 33.0 & 0.50 & 22 & 3.70 & 2.17 \\
+ & F & 10.60 & 10.60 & 0.00 & 32.4 & 0.00 & 30 & 5.30 & 2.56 \\
+ & MILP & 9.65 & 9.55 & 0.50 & 38.3 & 0.50 & 22 & 5.60 & 7.81 \\
+\addlinespace[1.5pt]
+\multirow{4}{*}{Weekend} & C & 11.89 & 11.89 & 0.00 & 27.4 & 0.00 & 30 & 3.70 & 0.01 \\
+ & S & 11.02 & 10.93 & 0.45 & 32.5 & 0.45 & 22 & 3.70 & 1.93 \\
+ & F & 10.99 & 10.99 & 0.00 & 32.2 & 0.00 & 30 & 5.30 & 2.29 \\
+ & MILP & 10.00 & 9.91 & 0.45 & 38.1 & 0.45 & 22 & 5.60 & 6.22 \\
+\addlinespace[1.5pt]
+\multirow{4}{*}{Holiday} & C & 11.68 & 11.68 & 0.00 & 28.2 & 0.00 & 30 & 3.70 & 0.01 \\
+ & S & 10.91 & 10.77 & 0.66 & 32.9 & 0.66 & 22 & 3.70 & 2.98 \\
+ & F & 10.80 & 10.80 & 0.00 & 32.8 & 0.00 & 30 & 5.30 & 2.75 \\
+ & MILP & 10.06 & 9.99 & 0.36 & 37.2 & 0.36 & 23 & 5.50 & 9.54 \\
+\addlinespace[1.5pt]
+\multirow{4}{*}{Average} & C & 11.67 & 11.67 & 0.00 & 27.8 & 0.00 & 30.0 & 3.70 & 0.01 \\
+ & S & 10.84 & 10.73 & 0.53 & 32.8 & 0.53 & 22.0 & 3.70 & 2.36 \\
+ & F & 10.80 & 10.80 & 0.00 & 32.5 & 0.00 & 30.0 & 5.30 & 2.53 \\
+ & MILP & 9.90 & 9.82 & 0.43 & 37.9 & 0.43 & 22.3 & 5.57 & 7.86 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item Notes: Eff. is the private-mode generalized-cost component, Eq. is the access-equity component, and Added walk is the demand-weighted increase in access-egress walking time in minutes. Frequencies are vehicles per hour. Time is wall-clock computational time for optimization plus ex-post fixed-point evaluation; for C, it is evaluation time only. 
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

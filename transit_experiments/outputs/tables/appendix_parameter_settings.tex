@@ -1,0 +1,36 @@
+\scriptsize
+\begin{longtable}{p{0.18\textwidth}p{0.30\textwidth}p{0.42\textwidth}}
+\caption{Parameter settings used in the numerical experiments.\label{tab:appendix_parameters}} \\
+\toprule
+Parameter group & Value & Explanation \\
+\midrule
+\endfirsthead
+\caption[]{Parameter settings used in the numerical experiments.} \\
+\toprule
+Parameter group & Value & Explanation \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{Continued on next page} \\
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+Choice alternatives & Transit, private car, e-bike, bicycle & The lower-level MNL has four alternatives: one transit alternative and three private-mode alternatives. \\
+Private-mode speed & \(v_{\mathrm{car}},v_{\mathrm{e-bike}},v_{\mathrm{bike}}=(0.58,0.32,0.22)\) km/min & Used to construct private car, e-bike, and bicycle baseline travel times, respectively. \\
+Private non-time cost & \(c^k_{ij}=6+0.18d,\ 1.8+0.08d,\ 0.8+0.04d\) & Generalized private-mode constants for car, e-bike, and bicycle; \(d\) is OD Euclidean distance in km. The e-bike cost is intentionally low. \\
+Transit fare & \(C^{\mathrm{fare}}_{\mathrm{tr}}=2.0\) & Generalized non-time transit cost. \\
+Transit time coefficient & \(\theta^{\mathrm{tr}}=1.00\) & Converts total transit travel time into generalized cost; access burden is controlled separately by the equity terms. \\
+Private time coefficients & \(\theta^k=(1.05, 1.15, 1.30)\) & Car, e-bike, and bicycle time coefficients. \\
+Alternative constants & \(\beta^{\mathrm{tr}}=32.7\); \(\beta^k=(0.20, 0.45, -0.15)\) & Mode-specific constants in the utility functions; the transit constant is calibrated to match a 25--30\% current-practice transit share. \\
+Logit scale & \(\lambda_t=0.085\ \forall t\) & Period-specific MNL sensitivity parameter; the same value is used for all aggregation periods. \\
+MFD equivalent accumulation & \(\chi_k\) normalized and absorbed into \(\mu_k\) & Modal road-space conversion factors are represented through the reduced-form congestion coefficients used in the experiments. \\
+Congestion coefficients & \(\mu_r=0.080\); \(\mu_k=(0.0070, 0.0045, 0.0020)\) & Transit, car, e-bike, and bicycle congestion-contribution parameters before sensitivity changes. \\
+Accessibility policy & \(\bar L=0.28,\rho_{min}=0.75,\Delta^{acc}_{max}=8.0\) & Stop-removal allowance, minimum covered-origin share, and zone access-increase limit. \\
+Route 438 periods & 10 periods: 06:00-07:00, 07:00-08:00, 08:00-09:00, 09:00-10:00, 10:00-12:00, 12:00-14:00, 14:00-16:00, 16:00-17:00, 17:00-18:30, 18:30-22:30 & Each period is an operational aggregation interval constructed from AFC boarding times, not a 10-minute slice. \\
+Route 438 AFC sample & 25297 line records; 5544 paired studied-direction trips & Route 438 card and QR-code transactions on 2021-12-17 and 2021-12-18 are filtered and paired by card, vehicle, direction, and transaction time. \\
+Route 438 OD data & 26 origins, 24 destinations, 624 potential OD pairs & AFC stop-level trips are mapped to corridor OD centroids; 422 observed stop OD pairs and 1331 positive OD-period cells seed the demand matrix. \\
+Transit-share expansion & \(\eta^{\mathrm{tr}}=0.28\) & Observed Route 438 transit trips are expanded to total multimodal demand using the 25--30\% transit-share assumption for the corridor; private-mode demand is the residual represented through the lower-level mode-choice model. \\
+Route 438 equity zones & 8 corridor zones & AFC-derived origins are assigned to consecutive corridor analysis zones according to route-order coordinate; these zones are not administrative or housing-community polygons. \\
+\end{longtable}
+\normalsize
